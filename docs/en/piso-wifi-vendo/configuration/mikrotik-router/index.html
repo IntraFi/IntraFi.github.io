@@ -125,24 +125,27 @@ Home
 <p>If it has the default configurations, proceed with the steps for <a href="#mikrotik-default-configuration">MikroTik Default Configuration</a>, and skip the steps below.</p>
 </li>
 <li>
-<p>Ensure that the MikroTik user has an admin account with blank password.</p>
+<p>Download <a href="https://mikrotik.com/download">WinBox</a> for PC or the <a href="https://mikrotik.com/mobile_app">MikroTik App</a> for the mobile application. The configuration steps shown in the following images are the same for both platforms.</p>
+</li>
+<li>
+<p>Ensure that the MikroTik user has an <em>admin account</em> with a <em>blank password</em> and <em>full group policy</em> access. If none exists, create one.</p>
 <p><img src="/img/piso-wifi-vendo/mikrotik-user.png" alt="mikrotik-user">
-<em>MikroTik configuration can be located at “System -> Users”.</em></p>
+<em>MikroTik configuration can be located at the menu of “System -> Users”.</em></p>
 </li>
 <li>
 <p>Ensure that the MikroTik router device has the <em>IP Service List</em> API enabled with the default port 8728.</p>
 <p><img src="/img/piso-wifi-vendo/ip-service-list.png" alt="ip-service-list"></p>
-<p><em>MikroTik configuration can be located at “IP -> Services”.</em></p>
+<p><em>MikroTik configuration can be located at the menu of “IP -> Services”.</em></p>
 </li>
 <li>
 <p>Ensure that the MikroTik router has given access to the ESP device, if ever a hotspot server is configured add the ESP device at the <em>Hotspot IP-Bindings</em>.</p>
 <p><img src="/img/piso-wifi-vendo/hotspot-ip-bindings.png" alt="hotspot-ip-bindings"></p>
-<p><em>MikroTik configuration can be located at “IP -> Hotspot -> IP Bindings”.</em></p>
+<p><em>MikroTik configuration can be located at the menu of “IP -> Hotspot -> IP Bindings”.</em></p>
 </li>
 <li>
 <p>Now we can connect the ESP device to the MikroTik router, through the given Wi-Fi settings.</p>
 <p><img src="/img/piso-wifi-vendo/esp-wifi-settings-connect-withconfig.png" alt="esp-wifi-settings-connect-withconfig"></p>
-<p><em>Use only the IP Address in the Wi-Fi settings that matches to the configuration from step “7.v”.</em></p>
+<p><em>Use only the IP Address in the Wi-Fi settings that matches to the configuration from the previous step.</em></p>
 </li>
 </ol>
 <h4 id="mikrotik-with-intrafi-default-configuration">MikroTik with IntraFi Default Configuration</h4>
