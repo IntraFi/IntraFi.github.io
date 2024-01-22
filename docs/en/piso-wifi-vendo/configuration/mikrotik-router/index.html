@@ -26,22 +26,22 @@
 </li>
 <li>
 <p>Connect to the ESP device setup named <em>INTRAFI-SETUP-ESPxxxx</em> Wi-Fi network after connecting a <em>Captive Portal</em> pop-up will show.</p>
-<p><img src="/img/piso-wifi-vendo/intrafi-setup-wifiname.png" alt="intrafi-setup-wifiname"></p>
+<img src="/_astro/intrafi-setup-wifiname.D66YvmCS_1Bc5CO.webp" alt="Connect to a Wi-Fi network named INTRAFI-SETUP-ESPxxxx" width="1005" height="627" loading="lazy" decoding="async">
 </li>
 <li>
 <p>If there is no captive portal automatically pop-up, check your notification or open a browser and go to this URL <a href="http://192.168.4.1">http://192.168.4.1</a>, use the default admin for the password.</p>
-<p><img src="/img/piso-wifi-vendo/intrafi-signin.png" alt="intrafi-signin"></p>
+<img src="/_astro/intrafi-signin.zjGOKnvH_Z21dT8p.webp" alt="Sign in through the Admin Panel" width="1080" height="840" loading="lazy" decoding="async">
 </li>
 <li>
 <p>Scan the network first by clicking the Wi-Fi icon at the right side of the Network Name, then choose the network to connect.</p>
-<p><img src="/img/piso-wifi-vendo/esp-wifi-settings-scan.png" alt="esp-wifi-settings-scan"></p>
+<img src="/_astro/esp-wifi-settings-scan.XjvcAzpO_vh47i.webp" alt="NodeMCU ESP8266 Wi-Fi network scan to connect to a network" width="2156" height="2040" loading="lazy" decoding="async">
 </li>
 <li>
 <p>Then, follow the provided instructions based on your MikroTik if it has <a href="#mikrotik-default-configuration">default configuration</a>, <a href="#mikrotik-with-configuration">with configuration</a>, or <a href="#mikrotik-with-intrafi-default-configuration">with IntraFi default configuration</a> for the <em>ESP Wi-Fi Settings</em> below</p>
 <h4 id="mikrotik-default-configuration">MikroTik Default Configuration</h4>
 <p>If the MikroTik device has the default configuration, is likely a brand new device, or has no DPK file installed, then connect the ESP device directly to the MikroTik router’s built-in Wi-Fi or through the Wi-Fi antenna.</p>
-<p><img src="/img/piso-wifi-vendo/esp-wifi-settings-connect-defaultconfig.png" alt="esp-wifi-settings-connect-defaultconfig"></p>
-<p><em>The default Wi-Fi network name of the MikroTik router is <em>MikroTik-xxxx</em>.</em></p>
+<img src="/_astro/esp-wifi-settings-connect-defaultconfig.n1d2iLDV_Z1T2Rz4.webp" alt="MikroTik with default configuration NodeMCU ESP8266 connect to a network" width="2159" height="2097" loading="lazy" decoding="async">
+<p align="center"><em>The default Wi-Fi network name of the MikroTik router is <em>MikroTik-xxxx</em>.</em></p>
 <h4 id="mikrotik-with-configuration">MikroTik with Configuration</h4>
 <p>If the MikroTik device has been previously configured, proceed to the next steps.</p>
 <ol>
@@ -53,28 +53,29 @@
 </li>
 <li>
 <p>Download <a href="https://mikrotik.com/download">WinBox</a> for PC or the <a href="https://mikrotik.com/mobile_app">MikroTik App</a> for the mobile application. The configuration steps shown in the following images are the same for both platforms.</p>
-<p><img src="/img/piso-wifi-vendo/mikrotik-winbox-login.png" alt="mikrotik-winbox-login">
-<em>Example connecting through WinBox to your MikroTik router. Using the given IP Address, Username, and Password.</em></p>
+<img src="/_astro/mikrotik-winbox-login.VrhEyqEU_bmi50.webp" alt="MikroTik WinBox log in guide" width="872" height="479" loading="lazy" decoding="async">
+<p><em>Example connecting through WinBox to your MikroTik router. Using the given IP Address, Username, and Password.</em></p>
 </li>
 <li>
 <p>Ensure that the MikroTik user has an <em>admin account</em> with a <em>blank password</em> and <em>full group policy</em> access. If none exists, create one.</p>
-<p><img src="/img/piso-wifi-vendo/mikrotik-user.png" alt="mikrotik-user">
-<em>MikroTik configuration can be located at the menu of “System -> Users”.</em></p>
+<img src="/_astro/mikrotik-user.5oVCp9is_Z1AFSAr.webp" alt="Create MikroTik user account" width="897" height="296" loading="lazy" decoding="async">
+<p align="center"><em>MikroTik configuration can be located at the menu of “System -&gt; Users”.</em></p>
 </li>
 <li>
 <p>Ensure that the MikroTik router device has the <em>IP Service List</em> API enabled with the default port 8728.</p>
-<p><img src="/img/piso-wifi-vendo/ip-service-list.png" alt="ip-service-list"></p>
-<p><em>MikroTik configuration can be located at the menu of “IP -> Services”.</em></p>
+<p align="center"><img src="/_astro/ip-service-list.t0Z-XGO6_jkwb9.webp" alt="MikroTik IP Service List must enable API Service/Port" width="535" height="221" loading="lazy" decoding="async"></p>
+<p align="center"><em>MikroTik configuration can be located at the menu of “IP -&gt; Services”.</em></p>
 </li>
 <li>
 <p>Ensure that the MikroTik router has given access to the ESP device, if ever a hotspot server is configured add the ESP device at the <em>Hotspot IP-Bindings</em>. Use the <em>MAC Address</em> for your ESP device, do not copy exactly what shown in the image.</p>
-<p><img src="/img/piso-wifi-vendo/hotspot-ip-bindings.png" alt="hotspot-ip-bindings"></p>
-<p><em>MikroTik configuration can be located at the menu of “IP -> Hotspot -> IP Bindings”.</em></p>
+<img src="/_astro/hotspot-ip-bindings.EfSq46vr_ZWVPlw.webp" alt="Add NodeMCU ESP8266 device at the MikroTik IP Binding" width="1130" height="243" loading="lazy" decoding="async">
+<p align="center"><em>MikroTik configuration can be located at the menu of “IP -&gt; Hotspot -&gt; IP Bindings”.</em></p>
 </li>
 <li>
 <p>Now we can connect the ESP device to the MikroTik router, through the given Wi-Fi settings.</p>
-<p><img src="/img/piso-wifi-vendo/esp-wifi-settings-connect-withconfig.png" alt="esp-wifi-settings-connect-withconfig"></p>
-<p><em>Use only the IP Address in the Wi-Fi settings that matches to the configuration from the previous step.</em></p>
+<img src="/_astro/esp-wifi-settings-connect-withconfig.9g2Cf_75_Z2evLwH.webp" alt="Add NodeMCU ESP8266 device at the MikroTik IP Binding" width="2161" height="2144" loading="lazy" decoding="async">
+
+<p align="center"> <em>Use only the IP Address in the Wi-Fi settings that matches to the configuration from the previous step.</em></p>
 </li>
 </ol>
 <h4 id="mikrotik-with-intrafi-default-configuration">MikroTik with IntraFi Default Configuration</h4>
@@ -82,11 +83,11 @@
 <ol>
 <li>
 <p>If the MikroTik device has built-in Wi-Fi, proceed to this step. Then, connect the ESP device using the Wi-Fi settings as shown in the image below.</p>
-<p><img src="/img/piso-wifi-vendo/esp-wifi-settings-connect-intraficonfig-builtinwifi.png" alt="esp-wifi-settings-connect-intraficonfig-builtinwifi"></p>
+<img src="/_astro/esp-wifi-settings-connect-intraficonfig-builtinwifi.8eC2uKIs_Z1KJHF.webp" alt="MikroTik with IntraFi configuration NodeMCU ESP8266 connect to a network" width="2160" height="2153" loading="lazy" decoding="async">
 </li>
 <li>
 <p>If the MikroTik device lacks built-in Wi-Fi but has an external antenna, connect the antenna to PORT 2 or PORT 3. Then, connect the ESP device using the Wi-Fi settings as shown in the image below.</p>
-<p><img src="/img/piso-wifi-vendo/esp-wifi-settings-connect-intraficonfig-withantenna.png" alt="esp-wifi-settings-connect-intraficonfig-withantenna"></p>
+<img src="/_astro/esp-wifi-settings-connect-intraficonfig-withantenna.Jx8bhkpG_Z2266jC.webp" alt="MikroTik with IntraFi configuration NodeMCU ESP8266 connect to a network using external antenna" width="2157" height="2151" loading="lazy" decoding="async">
 </li>
 </ol>
 </li>
